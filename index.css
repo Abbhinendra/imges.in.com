@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color:white;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 1px;
+    height: 1px;
+    border-radius: 26px;
+    background-color:white;
+
+}
+nav{
+    background-color: rgb(151, 52, 151);
+    display: flex;
+    padding: 20px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    margin: 0 12px;
+
+}
+nav .bars{
+    font-size: 32px;
+    font-weight: 800;
+    display: none;
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+nav ul li a:hover{
+    color: rgb(130, 0, 252);
+ 
+}
+nav ul input{
+    padding: 6px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+nav ul button{
+    padding: 6px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    color: white;
+    background-color: rgb(207, 122, 207);
+    cursor: pointer;
+    margin: 0 8px;
+}
+nav ul button:hover{
+    background-color: rgb(172, 35, 172);
+}
+nav ul li{
+    list-style: none;
+}
+
+  @media screen and (max-width: 1020px) {
+    nav .bars{
+        font-size: 32px;
+        font-weight: 800;
+        display: flex;
+        margin-left: 88%;
+    }
+    nav ul{
+        display: none;
+    }
+    ul.add{
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            background-color: rgb(179, 58, 179);
+            width: 100%;
+            gap: 28px;
+            height: 420px;
+    
+    }
+    
+  }
+  @media screen and (max-width: 332px) {
+   
+    #input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #input button{
+        margin: 20px 0;
+        width: 64vw;
+    }
+    
+  }
+ nav img{
+  width: 49px;
+  border-radius: 50%;
+  border: 1px solid lightblue;
+ }
+  
+ 
+  
+.conatiner{
+    background-color:white;
+    max-height: max-content;
+    padding: 36px;
+}
+ 
+  .box{
+    
+    margin:20px 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   max-height: max-content;
+   
+  }
+  .box div{
+    width: 320px;
+    height: 320px;
+    margin: 16px 12px;
+    cursor: pointer;
+    border: 1px solid rgb(185, 211, 220);
+    border-radius: 8px;
+
+  }
+  .box div:hover{
+    transform: scale(1.06);
+  }
+   .box .image{
+    width: 320px;
+    height: 320px;
+    border: 1px solid rgb(185, 211, 220);
+    border-radius: 8px;
+  
+
+    
+   }
+   #more{
+    text-align: center;
+    padding: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    border-radius: 6px;
+    border: 1px solid black;
+    background-color: rgb(83, 205, 246);
+    cursor: pointer;
+    margin-left: 46%;
+    display: none;
+    
+   }
+  .min{
+    min-height: 20vw;
+    
+  }
+  .btnDb{
+    padding:2px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid black;
+    color: white;
+    background-color: rgb(175, 221, 236);
+    border-radius: 9px;
+    position: absolute;
+    top:-4%;
+    left:34%;
+    cursor: pointer;
+  }
+  .box1{
+    margin:20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: max-content;
+    
+  }
+  .box1 div{
+    width: 480px;
+    height: 480px;
+    margin: 16px 12px;
+    cursor: pointer;
+    border: 1px solid rgb(185, 211, 220);
+    border-radius: 8px;
+
+  }
+  .box1 div:hover{
+    transform: scale(1.06);
+  }
+  .box1 div img{
+    width: 480px;
+    height: 480px;
+    border: 1px solid rgb(185, 211, 220);
+    border-radius: 8px;
+
+    
+   }
+   #more1{
+    text-align: center;
+    padding: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    border-radius: 6px;
+    border: 1px solid black;
+    background-color: rgb(83, 205, 246);
+    cursor: pointer;
+    margin-left: 46%;
+    display: none;
+    
+   }
+   @media screen and (max-width: 460px) {
+    #more1{
+      text-align: center;
+      padding: 4px;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: white;
+      border-radius: 6px;
+      border: 1px solid black;
+      background-color: rgb(83, 205, 246);
+      cursor: pointer;
+      margin-left: 32%;
+      display: none;
+      
+     }
+     #more{
+      text-align: center;
+      padding: 4px;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: white;
+      border-radius: 6px;
+      border: 1px solid black;
+      background-color: rgb(83, 205, 246);
+      cursor: pointer;
+      margin-left: 32%;
+      display: none;
+      
+     }
+  }
+   
+     .out{
+        padding:2px;
+        font-size: 12px;
+        font-weight: 600;
+        border: 2px solid black;
+        color: white;
+        background-color: rgb(73, 206, 250);
+        border-radius: 9px;
+        position: absolute;
+        cursor: pointer;
+        display: none;
+      } 
+
+      @media screen and (max-width: 520px) {
+        .box1 div{
+          width: 320px;
+          height: 320px;
+          margin: 16px 12px;
+          cursor: pointer;
+          border: 1px solid rgb(185, 211, 220);
+          border-radius: 8px;
+      
+        }
+        .box1 div img{
+          width: 320px;
+          height: 320px;
+          border: 1px solid rgb(185, 211, 220);
+          border-radius: 8px;
+      
+          
+         }
+      }
+      @media screen and (max-width: 320px) {
+        .box1 div{
+          width: 280px;
+          height: 280px;
+          margin: 16px 12px;
+          cursor: pointer;
+          border: 1px solid rgb(185, 211, 220);
+          border-radius: 8px;
+      
+        }
+        .box1 div img{
+          width: 280px;
+          height: 280px;
+          border: 1px solid rgb(185, 211, 220);
+          border-radius: 8px;
+      
+          
+         }
+      }
+    
+    @media screen and (max-width: 286px) {
+      .box1 div{
+        width: 220px;
+        height: 220px;
+        margin: 16px 12px;
+        cursor: pointer;
+        border: 1px solid rgb(185, 211, 220);
+        border-radius: 8px;
+    
+      }
+      .box1 div img{
+        width: 220px;
+        height: 220px;
+        border: 1px solid rgb(185, 211, 220);
+        border-radius: 8px;
+    
+        
+       }
+    }

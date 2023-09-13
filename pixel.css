@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.boxpx{
+    margin:16px 0;
+    max-height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12px;
+}
+.boxpx div{
+    width: 320px;
+    height: 320px;
+    border: 1px solid lightblue;
+    border-radius: 6px;
+    margin: 12px 8px;
+    cursor: pointer;
+}
+.boxpx div:hover{
+    transform: scale(1.06);
+}
+.boxpx img{
+    width: 320px;
+    height: 320px;
+    border: 1px solid lightblue;
+    border-radius: 6px;
+}
+.min{
+    height: 12vw;
+}
+.max{
+    height: 2vw;
+}
+.mt{
+   margin-left: 46%;
+   outline: none;
+   border: none;
+   border-radius: 8px;
+   padding: 4px;
+   font-size: 16px;
+   font-weight: 800;
+   background-color: rgb(194, 101, 194);
+   cursor: pointer;
+   color: white;
+   margin-top: 12px;
+   
+}
+
+@media screen and (max-width: 368px) {
+    .mt{
+        margin-left: 36%;
+    }
+
+}
+
+.jokebox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:20px 0;
+    ;
+}
+
+.joke{
+    padding: 19px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border: 1px solid rgb(42, 36, 36);
+    background-color: rgb(206, 188, 154);
+    border-radius: 8px;
+    margin: 12px 9px;
+    width: 360px;
+    height:360px;
+    font-size: 18px;
+    font-weight: 700;
+    color:black;
+    text-align: center;
+    cursor: pointer;
+   
+}
+.joke:hover{
+    transform: scale(1.06);
+}
+    
+#content{
+    margin: 16px 0;
+}
+.joke h4{
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+ @media screen and (max-width: 346px) {
+    .joke{
+        font-size: 16px;
+        font-weight: 200;
+    }
+    } 
+    @media screen and (max-width: 270px) {
+        .joke{
+            font-size: 12px;
+            font-weight: 200;
+        }
+        } 
+
